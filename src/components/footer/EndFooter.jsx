@@ -1,4 +1,4 @@
-import logoWhite from "../../assets/logoWhite.png";
+import LogoWhite from "../../assets/LogoWhite.png";
 import { CiFacebook, CiLinkedin } from "react-icons/ci";
 import { TiSocialTwitterCircular } from "react-icons/ti";
 import { Link } from "react-scroll";
@@ -8,7 +8,7 @@ const EndFooter = () => {
     <footer className="bg-black text-white p-5 flex flex-col gap-8 rounded-md">
       <div className="flex text-center justify-between">
         <div className="flex items-center justify-between">
-          <img src={logoWhite} alt="logo" className="w-30" />
+          <img src={LogoWhite} alt="logo" className="w-30" />
         </div>
         <div>
           <ul className="flex gap-5 underline">
