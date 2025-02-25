@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "../../assets/logo.png";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,22 +23,54 @@ const Navbar = () => {
       >
         <ul className="flex flex-col lg:flex-row lg:gap-10 gap-5 items-center">
           <li>
-            <a href="">About us</a>
+            <a>About us</a>
           </li>
           <li>
-            <a href="">Services</a>
+            <Link
+              to="services"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+              href=""
+            >
+              Services
+            </Link>
           </li>
           <li>
-            <a href="">Use Cases</a>
+            <Link
+              to="case"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+              href=""
+            >
+              Use Cases
+            </Link>
           </li>
           <li>
-            <a href="">Pricing</a>
+            <a>Pricing</a>
           </li>
           <li>
-            <a href="">Blog</a>
+            <Link
+              to="team"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+              href=""
+            >
+              Blog
+            </Link>
           </li>
           <li className="border-1 rounded-sm p-3">
-            <a href="">Request a quote</a>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+              href=""
+            >
+              Request a quote
+            </Link>
           </li>
         </ul>
       </div>
