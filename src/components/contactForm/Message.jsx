@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { addMessage } from "../../feature/messageSlice";
 import { useDispatch } from "react-redux";
-import ViewMessage from "./viewMessage";
+import ViewMessage from "./ViewMessage";
 
 const Message = () => {
   const [name, setName] = useState("");
