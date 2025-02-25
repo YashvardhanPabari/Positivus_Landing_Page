@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../../assets/logo.png";
+import Logo from "../../assets/logo.png";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-scroll";
 
@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="flex w-full justify-between items-center p-1">
       <div>
-        <img src={logo} alt="logo" className="w-30" />
+        <img src={Logo} alt="logo" className="w-30" />
       </div>
 
       <button className="lg:hidden p-2" onClick={() => setIsOpen(!isOpen)}>
